@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-main-color: #111213;
+    --text-main-color: #ffff;
+    --btn-bg-color: #306AD9;
+    --btn-bg-color-hover: #4177DC;
+    --btn-bg-color-active: #608CE2;
+    --icon-color: #BABeC4;
+}
+
+
+
+body{
+    font-family: 'Exo regular';
+    color: var(--text-main-color);
+}
