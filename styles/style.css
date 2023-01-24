@@ -87,21 +87,19 @@ header {
   filter: blur(90px);
 }
 
-
 .intro::after {
-    content: "";
-    /* display: block; */
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    right: -20px;
-    /* left: 1031px; */
-    top: 404px;
-    
-    background: rgba(55, 74, 109, 0.5);
-    filter: blur(90px);
-  }
+  content: "";
+  /* display: block; */
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -20px;
+  /* left: 1031px; */
+  top: 404px;
 
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
 
 .wrapper {
   text-align: center;
@@ -159,7 +157,7 @@ header {
 
   border: 2px solid green;
   border-radius: 50%;
-  filter: drop-shadow(0px 0px 16px #02db8a);
+  filter: drop-shadow(0px 0px 11px #02db8a);
 }
 
 .intro__start h2 {
@@ -172,9 +170,107 @@ header {
   border: 2px solid #099260;
   font-weight: 500;
   font-size: 14px;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
-.intro__start:hover .intro__start h2 {
-  filter: drop-shadow(0px 0px 16px #02db8a);
+.intro__start:hover h2 {
+  filter: drop-shadow(0px 0px 8px #29f563);
+  background-color: silver;
+  color: rgb(5, 84, 5);
+  font: bolder;
+  font-family: "Poppines bold";
+  font-weight: 600;
+  line-height: 140%;
+  font-size: 16px;
+  /* ---------------------- intro section started ---------------------- */
+}
+
+/* ---------------------- intro section finished ---------------------- */
+
+.about__section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__img {
+  display: flex;
+}
+
+.about__info {
+  display: flex;
+}
+
+.about__img {
+  position: relative;
+}
+
+.about__hover {
+  position: absolute;
+  width: 197px;
+  height: 104px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  align-items: center;
+  right: 0;
+  bottom: -50px;
+}
+
+.about__hover--title {
+  text-align: center;
+  font-family: "Exo semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  background-color: transparent;
+}
+
+.about__hover--info {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  background-color: transparent;
+  text-align: center;
+}
+
+.about__info {
+  max-width: 401px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.about__info--title {
+  max-width: 209px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.about__info--text {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--icon-color);
+  margin-bottom: 48px;
+}
+
+.about__btn {
+  padding: 14px 32px;
+  background-color: var(--btn-bg-color);
+  width: 149px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+
+  font-family: "Exo regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
 }
